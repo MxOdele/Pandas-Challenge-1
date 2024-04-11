@@ -1,7 +1,7 @@
 # Pandas-Challenge-1
 
 <div align='center'>
-    <img src='https://images.pexels.com/photos/4483610/pexels-photo-4483610.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' height='' title='' alt=''/>
+    <img src='https://images.pexels.com/photos/4483610/pexels-photo-4483610.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' height='300' title='Inventory stocked on the shelves of a warehouse (image courtesy of Pexels)' alt='An image of a storage warehouse aisle showing the perspective of looking down a series of rows loaded with inventory.'/>
 
 *Wholesale Data Analysis*[^1]
 
