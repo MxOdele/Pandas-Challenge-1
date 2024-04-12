@@ -62,7 +62,7 @@ To access the wholesale data analysis notebook, simply download the `.ipynb` fil
 
 ### *How to use*
 
-Simply `Run All` to execute the code in every cell of the notebook in sequence. Alternatively, each cell may be `Run` on its own, though it is still recommended to run them in order.
+Simply `Run All Cells` to execute the code in every cell of the notebook in sequence. Alternatively, each cell may be `Run` on its own, though it is still recommended to run them in order.
 
 ### *Breaking down the cells*
 
@@ -92,13 +92,13 @@ Below is a more in-depth explanation of the various cells coded within the `whol
 | 18 | Declaring `line_profit` to calculate the total profit of a given line of `df_totals`, then creating the test DF `line_const_confirm` to confirm the total profit is calculated correctly |
 | 19 | With `line_profit` confirmed, adding column `line_profit` to `df_totals` with the calculated values |
 | *Markdown 3* | *Providing order id's and totals to confirm calculations match reciepts* |
-| 20 | Declaring `order_A_tot`, `order_B_tot`, and `order_C_tot` to sume the `line_price` for all records matching the provided `order_id`s, then printing the results in formatted strings |
+| 20 | Declaring the list `orders_to_confirm`, then calculating `line_price` by `order_id` in `orders_to_confirm` and printing the results |
 | *Markdown 4* | *Explanation for the purpose of cells 21 through 24* |
-| 21 | X |
-| 22 | X |
-| 23 | X |
-| 24 | X |
-| Markdown 5 | X |
+| 21 | Calculating `line_price` by `client_id` in `top5_client_list` and printing the results |
+| 22 | Declaring `top_client_values`, calculating the sums for `qty`, `shipping_price`, `line_price`, `line_cost`, and `line_profit` by `client_id` in `top5_client_list`, appending those rows to `top_client_values`, using `top_client_values` to create the summary DF `top_client_summary`, and sorting the rows by highest to lowest `line_profot` |
+| 23 | Defining the `convert_shipping`, `convert_price`, `convert_cost`, and `convert_profit` functions to reformat the values in some columns of `top_client_summary` for readability, applying those functions to `top_client_summary`, and then renaming the columns for additional readability |
+| 24 | Sorting the values in `top_client_summary` by highest to lowest `Total Profit` |
+| Markdown 5 | Summarizing some of my findings from `top_client_summary` |
 
 [^1]: Image courtesy of free source image site, <a href='https://www.pexels.com/photo/warehouse-with-concrete-floors-4483610/' title='Link to Pexels listing for image'>Pexels</a>
 
